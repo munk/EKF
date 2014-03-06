@@ -21,4 +21,9 @@ def test_move_linear_y():
     result = move(position, control)
     assert_array_almost_equal(result, [0, 1, pi/2])
 
+def test_move_rotational_left():
+    position = [0, 0, 0]
+    control = [0, pi]
+    result = move(position, control)
+
 
